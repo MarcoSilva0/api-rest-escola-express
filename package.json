@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "db:build": "sequelize db:migrate",
+    "bd:seed": "sequelize db:seed",
     "dev": "nodemon src/server.js",
     "build": "sucrase ./src -d ./dist --transforms imports",
     "start": "node dist/server.js"
